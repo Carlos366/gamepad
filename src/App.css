@@ -1,693 +1,394 @@
 /*GERAL*/
-body{
-    background-color: #151515 !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 1.5vmin) !important;
-    color: white !important;
-    padding-top: 10px;
+body {
+  background-color: #151515 !important;
+  min-height: 100vh;
+  margin: 0 auto !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
-h1{
-    font-size: 3rem;
-    font-weight: bold;
+.container-fluid {
+  max-width: 90%;
 }
 
-a:hover{
-    text-decoration: none !important;
+a:hover {
+  text-decoration: none !important;
 }
 
 .text-dark {
-    color: #565656 !important;
+  color: #565656 !important;
 }
 
 /*Media queries*/
-@media only screen and (max-width: 1200px) {
-    .card {
-        width: 28% !important;
-    }
-    .gamecard{
-        padding: 35px;
-        width: 45%;
-    }
-
-    .infsec{
-        padding-top: 1.5rem;
-        width: 55%;
-    }
-    .newscard{
-        height: 12rem !important;
-    }
-    .headline .card-title{
-        font-size: 16px !important;
-    }
-}
 
 @media only screen and (max-width: 992px) {
-    .Body{
-        margin-top: 90px;
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-    .GameBody{
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-    .navbar-nav .nav-link {
-        padding-left: 0 !important;
-        font-size: calc(8px + 1.5vmin) !important;
-    }
-    .GameBody{
-        top: 0 !important;
-    }
-    .gamecard{
-        padding: 35px 4rem 35px 0 !important;
-        width: 70% !important;
-        height: auto !important;
-        background-color: #151515 !important;
-    }
-
-    .infsec{
-        top: 0 !important;
-        padding-top: 30px !important;
-        width: 30%;
-        height: 100%;
-    }
-    .gameinf{
-        padding-left: 0 !important;
-    }
+  .GameBody {
+    top: 0 !important;
+  }
+  .gamecard {
+    background-color: #151515 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .Body{
-        margin-top: 90px;
-        margin-left: 90px;
-        margin-right: 90px;
-    }
-    .GameBody{
-        margin-left: 90px;
-        margin-right: 90px;
-    }
-    .search {
-        background-color: #3B3B3B !important;
-        border-radius: 2rem !important;
-        border: none !important;
-        margin-top: 1rem;
-        position:relative;
-    }
-    .dropdown-menu {
-        background-color: #151515 !important;
-        border: none !important;
-        border-radius: .75rem !important;
-        padding-top: 0 !important;
-    }
-    .navb{
-        background-color: #161616;
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-    }
-    .newscard{
-        height: 15rem !important;
-    }
-    .headline .card-title{
-        font-size: 18px !important;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .Body{
-        margin-top: 80px;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    .GameBody{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .newscard{
-        height: 10rem !important;
-    }
-    .headline .card-title{
-        font-size: 12px !important;
-    }
-    .gamecard{
-        padding: 35px 2rem 35px 0 !important;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .card {
-        width: 85% !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
-    }
-}
-
-@media only screen and (max-width: 496px) {
-    .card {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .card {
-        width: 20% !important;
-    }
-    .gamecard{
-        width: 19rem;
-        padding: 35px;
-    }
-
-    .infsec{
-        padding-top: 1.5rem;
-
-    }
-    .gameinf{
-        display: inline-block;
-        padding-left: 5rem;
-    }
-    .newscard {
-        height: 20rem !important;
-    }
+  .dropdown-menu {
+    background-color: #151515 !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    padding-top: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .Body{
-        margin-top: 90px;
-        margin-left: 210px;
-        margin-right: 210px;
-    }
-    .GameBody{
-        margin-left: 210px;
-        margin-right: 210px;
-    }
-    .gamehead{
-        min-height: 20rem;
-    }
+  .GameBody {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .search {
-        background-color: #3B3B3B !important;
-        border-radius: 2rem !important;
-        border: none !important;
-        width: 40%;
-        position:relative;
-    }
-    .dropdown-menu {
-        background-color: #232323 !important;
-        border: none !important;
-        border-radius: .75rem !important;
-    }
-    .navb{
-        background-color: #161616;
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-    }
-    .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-    .card {
-    }
-}
-
-/*HEADER*/
-.dropdown-menu a a{
-    color: #E6E6E6;
-    width: 100%;
-    height: 100%;
-}
-
-.navbar-dark .navbar-toggler {
-    border: none !important;
-}
-
-button:focus {
-    outline: none !important;
-}
-
-.logo{
-    margin-left: 0.3rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 2rem;
-    vertical-align: text-bottom;
-}
-
-.navbar-brand {
-    display: flex!important;
-    flex-basis: auto;
-    margin-right: 40px !important;
-}
-
-.dropdown-item {
-    color: darkgrey !important;
-}
-
-.dropdown-item:hover{
-    background-color: #3B3B3B !important;
-}
-
-.dropdown-toggle::after {
-    margin-bottom: -0.15rem !important;
-}
-
-::placeholder {
-    color: darkgrey !important;
-}
-
-/*Search*/
-.searchbar{
-    background-color: #3B3B3B !important;
-    border-radius: 1rem !important;
-    border: none !important;
-    width: 80% !important;
-    color: #E6E6E6 !important;
-}
-
-.searchicon{
-    margin-left: 1rem;
-}
-
-.sbox{
-    color: #E6E6E6;
-    width: 100%;
-    padding: .25rem 1.5rem;
-}
-
-
-.searchres{
-    font-size: 18px;
-    color: #E6E6E6;
-    width: 100%;
-    display: block;
-    clear: both;
-    font-weight: 400;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    margin-top: 5px;
-}
-
-.imagt{
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.searchres:hover{
-    background-color: #434343 !important;
-    color: #E6E6E6;
-}
-
-.searchbar:focus{
-    box-shadow: none !important;
-}
-
-.imags{
-    height: 35px;
-    width: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 0.3rem;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    align-items: center !important;
-    padding: 0 !important;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.imags img{
-    height: 35px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.searchdrop{
-    position: absolute !important;
-    background-color: #3b3b3b !important;
-    border-radius: 0 0 1rem 1rem !important;
-    z-index: -1000;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    margin-top: -15px;
-    width: 100%;
-}
-
-.searchdrop h5{
-    padding-left: 25px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 50%;
-    display: inline-block;
-}
-.searchdrop h6{
-    padding-right: 30px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 50%;
-    display: inline-block;
-    text-align: end;
-    font-size: 14px;
-    color: #d6d6d6;
-    text-decoration: underline;
-}
-
-.searchdrop hr{
-    width: auto !important;
-}
-
-.searchdrop .dropdown-item:hover{
-    background-color: white !important;
-}
-
-/*Login*/
-.loginbtn{
-    border: none !important;
-    border-radius: 2rem !important;
-    height: 100%;
-    color: #232323;
-    font-size: 13px;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.login{
-
-}
-
-.login-dark {
-    background: none;
-    position: absolute;
-    top: 20vh;
-    left: 35vw;
-}
-
-.login .form-control{
-    padding: 1.5rem 1rem;
-    border: none;
-    font-size: 1.2rem;
-}
-
-.login-dark a{
-    text-decoration: underline;
-}
-
-.log {
-    padding: 0.7rem 0;
-    color: #151515;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #f8f9fa;
-    border-color: #f8f9fa;
-}
-
-.overlay {
-    background-color: #232323;
-    opacity: 90%;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-}
-
-/**/
-.btn-dark {
+  .dropdown-menu {
+    width: 186px;
     background-color: #232323 !important;
     border: none !important;
     border-radius: 0.75rem !important;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+  }
 }
 
-.btn.focus, .btn:focus {
-    box-shadow: none !important;
+/*HEADER*/
+.dropdown-menu a a {
+  color: #e6e6e6;
+  width: 100%;
+  height: 100%;
 }
 
-.drop{
-    width: 198px;
-    margin-top: -20px !important;
+.search {
+  position: relative;
+  width: 25vw;
+  border-radius: 2rem !important;
+  border: none !important;
 }
 
-.card-deck .card{
-    margin-bottom: 1rem !important;
-    flex: auto !important;
-    max-width: 300px;
+.navbar-dark .navbar-toggler {
+  border: none !important;
 }
 
-.card-deck {
-    margin-top: 2rem !important;
-    min-height: 100vh;
+button:focus {
+  outline: none !important;
 }
 
-.card a{
-    width: 100% !important;
-    height: 100% !important;
-    color: white;
+.logo {
+  margin-left: 0.3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2rem;
+  vertical-align: text-bottom;
 }
-.imgc{
-    width: 100% !important;
-    height: 80% !important;
-    color: white;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 !important;
-    position: relative;
+
+.dropdown-item {
+  color: darkgrey !important;
+}
+
+.dropdown-item:hover {
+  background-color: #3b3b3b !important;
+}
+
+.dropdown-toggle::after {
+  margin-bottom: -0.15rem !important;
+}
+
+::placeholder {
+  color: darkgrey !important;
+}
+
+/*Search*/
+.searchbar {
+  background-color: #3b3b3b !important;
+  border-radius: 1rem !important;
+  border: none !important;
+  width: 100% !important;
+  color: #e6e6e6 !important;
+}
+
+.searchres {
+  font-size: 18px;
+  color: #e6e6e6;
+  width: 100%;
+  display: block;
+  clear: both;
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.imagt {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.searchres:hover {
+  background-color: #434343 !important;
+  color: #e6e6e6;
+}
+
+.searchbar:focus {
+  box-shadow: none !important;
+}
+
+.imags {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 0.3rem;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  align-items: center !important;
+  padding: 0 !important;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.imags img {
+  height: 35px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.searchdrop {
+  position: absolute !important;
+  background-color: #3b3b3b !important;
+  border-radius: 0 0 1rem 1rem !important;
+  z-index: -100;
+  margin-top: -15px;
+}
+
+.searchdrop h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 50%;
+  color: white;
+  display: inline-block;
+}
+.searchdrop h6 {
+  display: inline-block;
+  color: #d6d6d6;
+  text-decoration: underline;
+}
+
+.searchdrop .dropdown-item:hover {
+  background-color: white !important;
+}
+
+/**/
+.btn-light {
+  border: none !important;
+  border-radius: 0.75rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.card a {
+  width: 100% !important;
+  height: 100% !important;
+  color: white;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.imgc {
+  width: 100% !important;
+  height: 80% !important;
+  color: white;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  position: relative;
 }
 
 .card {
-    background-color: #1E1E1E !important;
-    border: none !important;
-    border-radius: .7rem !important;
-    height: 300px;
-    overflow: hidden;
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 !important;
-    position: relative;
+  background-color: #1e1e1e !important;
+  border: none !important;
+  border-radius: 0.7rem !important;
+  height: 300px !important;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  position: relative;
+  margin-bottom: 1rem !important;
+  flex: auto !important;
 }
 
-
-.card-title{
-    text-align: center;
-    font-size: 1rem !important;
-    margin: 0 !important;
-    vertical-align: bottom !important;
+.card-title {
+  text-align: center;
+  font-size: 1rem !important;
+  margin: 0 !important;
+  vertical-align: bottom !important;
 }
 
 .card-body {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 20%;
-    padding: 0.4rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 20%;
+  padding: 0.4rem !important;
 }
 
-.card-img, .card-img-top {
-    height: 100% !important;
-    width: auto !important;
-    padding-left: -50%;
-    border-top-left-radius: calc(.7rem - 1px) !important;
-    border-top-right-radius: calc(.7rem - 1px) !important;
+.card-img,
+.card-img-top {
+  height: 100% !important;
+  width: auto !important;
+  padding-left: -50%;
+  border-top-left-radius: calc(0.7rem - 1px) !important;
+  border-top-right-radius: calc(0.7rem - 1px) !important;
 }
 
-.hover{
-    position: absolute;
-    bottom: 20%;
-    background-color: #1E1E1E;
-    width: 100%;
-    opacity: 0;
-    height: auto;
-    padding: 0.1rem;
-    text-align:center;
+.hover {
+  position: absolute;
+  bottom: 20%;
+  background-color: #1e1e1e;
+  width: 100%;
+  opacity: 0;
+  height: auto;
+  padding: 0.1rem;
+  text-align: center;
 }
 
-.icons{
-    display: inline-flex !important;
+.icons {
+  display: inline-flex !important;
 }
 
-.icons svg{
-    width: 16px !important;
-    margin: 6px 5px;
+.icons svg {
+  width: 16px !important;
+  margin: 6px 5px;
 }
 
-.card:hover .hover{
-    opacity: 85%;
-    transition: opacity 0.3s;
+.card:hover .hover {
+  opacity: 85%;
+  transition: opacity 0.3s;
 }
 
-.card:hover .card-img-top{
-    opacity: 60% !important;
-    transition: opacity 0.3s;
+.card:hover .card-img-top {
+  opacity: 60% !important;
+  transition: opacity 0.3s;
 }
 
-.gameimg{
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover;
+.gamehead {
+  max-height: 30rem;
+  width: 100%;
 }
 
-.gamehead{
-    width: 100%;
-    max-height: 30rem;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 !important;
+.GameBody {
+  position: relative;
+  top: -180px;
+  align-content: flex-end;
 }
 
-.GameBody{
-    position: relative;
-    top: -180px;
-    align-content: flex-end;
-}
-
-.GameBody h4{
-    margin-top: 2rem;
-}
-
-.texto{
-    color: #e7e7e7;
-    font-weight: 350;
+.texto {
+  color: #e7e7e7;
+  font-weight: 350;
 }
 
 u {
-    text-decoration-line: underline;
-    text-decoration-color: #808080;
+  text-decoration-line: underline;
+  text-decoration-color: #808080;
 }
 
-.gameheader{
-    position: relative;
-    margin-bottom: 2rem;
+.gameheader {
+  position: relative;
+  margin-bottom: 2rem;
 }
 
-.gamecard{
-    background-color: #1E1E1E;
-    height: 20rem;
-    border-radius: 1rem;
-    display: inline-block;
+.gamecard {
+  background-color: #1e1e1e;
+  width: 50%;
+  border-radius: 1em;
 }
 
-.infsec{
-    display: inline-block;
-    position: absolute;
-    bottom: 10%;
-    height: 20%;
+.video {
+  width: 100%;
 }
 
-.infsec h4{
-    padding-top: 0;
-    margin-top: 0;
+.newscard {
+  width: 100%;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  display: flex !important;
+  padding: 0 !important;
+  position: relative;
+  background-color: white;
+  margin: 1rem 0 2rem;
 }
 
-
-.gameinf{
-    display: inline-block;
-    padding-left: 3rem;
-    color: #d6d6d6;
+.newscard img {
+  object-fit: cover;
+  height: 100%;
 }
 
-.video{
-    width: 100%;
+.nav-pills {
+  margin-top: 2rem;
+  border-bottom: none;
 }
-
-.react-multi-carousel-list {
-    height: auto;
-    padding: 0 !important;
-}
-
-.react-multi-carousel-track{
-    height: auto;
-}
-
-.react-multi-carousel-item{
-    margin-right: 5px;
-    height: auto;
-}
-
-.react-multi-carousel-item a{
-    width: 100% !important;
-    height: 100% !important;
-    color: white;
-}
-
-.newscard{
-    width: 100%;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    display: flex !important;
-    padding: 0 !important;
-    position: relative;
-    background-color: white;
-    margin: 1rem 0 2rem;
-}
-
-.newscard img{
-    object-fit: cover;
-    height: 100%;
-}
-
-.headline {
-    background-color: #1E1E1E;
-    opacity: 90%;
-    position: relative;
-    bottom: 30%;
-    height: 30%;
-    color: white;
-}
-
-.nav-pills{
-    margin-top: 2rem;
-    border-bottom: none;
-}
-.nav-pills a{
-    color: #e6e6e6;
+.nav-pills a {
+  color: #e6e6e6;
 }
 
 .nav-link {
-    color: grey;
-    margin-right: .5rem;
-    border-radius: .5rem !important;
+  color: grey;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem !important;
 }
 
 .nav-pills .active {
-    font-weight: bold;
-    color: #232323 !important;
-    background-color: #E6E6E6 !important;
+  font-weight: bold;
+  color: #232323 !important;
+  background-color: #e6e6e6 !important;
 }
 
 .nav-link:hover {
-    color: #e6e6e6;
-    background-color: #292929;
+  color: #e6e6e6;
+  background-color: #292929;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #232323;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #232323;
 }
 
-
-.btn-favbtn svg path{
-    color: grey;
-    opacity: 80%;
+.btn-favbtn svg path {
+  color: grey;
+  opacity: 80%;
 }
-.btn-favbtn:hover svg path{
-    opacity: 100%;
+.btn-favbtn:hover svg path {
+  opacity: 100%;
 }
 
+.loading {
+  margin: 1rem 0 3rem 0;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 
-.loading{
-    margin: 1rem 0 3rem 0;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+.nav-link {
+  color: white !important;
 }

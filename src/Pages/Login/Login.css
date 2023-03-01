@@ -1,0 +1,22 @@
+.login {
+  height: 100vh;
+  background-size: cover;
+}
+
+.login .form {
+  background-color: #151515;
+  color: white;
+  height: 100vh;
+  max-width: 30%;
+  padding-top: 80px;
+}
+
+.login .form label {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .login .form {
+    max-width: 100%;
+  }
+}
