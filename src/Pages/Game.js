@@ -212,7 +212,7 @@ function Game() {
             {gameResults?.stores
               ? gameResults?.stores.map((p) => (
                   <a href={p.url ? p.url : null} className='mr-2 '>
-                    <button className='btn-light p-4 mr-2 mb-2'>
+                    <button className='btn-light p-3 me-2 mb-2'>
                       {p.store.name}
                     </button>
                   </a>
